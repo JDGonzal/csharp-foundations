@@ -1,4 +1,7 @@
 <!-- markdownlint-disable MD012 -->
+<!-- markdownlint-disable MD029 -->
+<!-- markdownlint-disable MD031 -->
+<!-- markdownlint-disable MD032 -->
 
 # CURSO DE C# DESDE CERO 2025
 
@@ -68,4 +71,36 @@ This Learning win wi based on this video list: [Curso de programación con C#](h
 13. Close the last `Visual Studio Code`.
 14. Check for the **`.gitignore`** file.
 
+---
+
+## 3. CREAR UN PROYECTO EN C# video(3)
+
+1. How the instructor uses the `Visual Studio`, instead of the simple `Visual Studio Code`, in the first one there are option menu to select the creation type.
+2. Moust be sure in the repository directory `csharp-foundations`, if is necessary use the `cd ..` to back to this directory.
+3. In our system using a `TERMINAL`, we create a project with the command: </br> `dotnet new console -o console-app1`
+4. I change to the new directory using in the `TERMINAL`: </br> `cd console-app1` </br> Then the other command `code .`
+5. Following the, I select `Run`->`Start Debugging F5`, it askme for the language, then I select `C#` then what file I'll run.
+6. Executes this in the `TERMINAL`:
+```bash
+ *  Executing task: dotnet: build e:\tutorials\c-sharp\csharp-foundations\console-app1\console-app1.csproj 
+
+dotnet build e:\tutorials\c-sharp\csharp-foundations\console-app1\console-app1.csproj /property:GenerateFullPaths=true /p:Configuration=Debug /p:Platform=AnyCPU /consoleloggerparameters:NoSummary 
+C# extension build result service is available.
+  Determining projects to restore...
+  Restored e:\tutorials\c-sharp\csharp-foundations\console-app1\console-app1.csproj (in 81 ms).
+  console-app1 -> e:\tutorials\c-sharp\csharp-foundations\console-app1\bin\Debug\net10.0\console-app1.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.35
+ *  Terminal will be reused by tasks, press any key to close it. 
+```
+7. Finally in another `TERMINAL` window, it shows:
+```bash
+ & 'c:\Users\pizah\.vscode\extensions\ms-dotnettools.csharp-2.140.9-win32-x64\.debugger\x86_64\vsdbg.exe' '--interpreter=vscode' '--connection=782dc2d3054a4092964e0240742dd72c' 
+Hello, World!
+```
+8. Close the last VSCode, and back in this `TERMINAL` to the directory of repository: ``.
 
