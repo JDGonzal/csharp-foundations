@@ -233,4 +233,19 @@ Current Date: 2025-10-30 00:00:00
 Price: 15.24
 Balance: 654.99
 ```
-9. Close the last VSCode, in the `TERMINAL` back to the previous directory (`cd ..`).
+9. Close the last VSCode, and in the `TERMINAL` back to the previous directory (`cd ..`).
+
+---
+
+## 6. CONCATENACION DE VALORES video(6)
+
+1. Again we back to the `console-app1` with `cd .\console-app1\` and open the new VSCode with the `code .` command.
+2. Delete all inside the **`Program.cs`** , then I add new code:
+```c#
+string name = "John Doe";
+int age = 30;
+
+Console.WriteLine($"Name: {name}, Age: {age}");
+```
+3. Run the code with a command in the `TERMINAL`: </br> `dotnet run` </br> Then I get this answer: </br> `Name: John Doe, Age: 30`
+
