@@ -39,10 +39,9 @@
 *.out
 *.app
 
-# Build directories
-build/
-Build/
-build-*/
+
+# vitepress build output
+**/.vitepress/dist
 
 # CMake generated files
 CMakeFiles/
@@ -67,3 +66,41 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+
+## C# Ignored Files
+
+## Core Build Results (Ignore compiled outputs)
+[Bb]in/
+[Oo]bj/
+[Log]/
+
+## Visual Studio Cache, Settings, and User Files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## MonoDevelop / Rider / Visual Studio Code Settings
+.idea/
+.vscode/
+*.userprefs
+
+## Package Manager Folders
+packages/
+# Exclude the paket directory if used, except the bootstrapper
+.paket/
+!*.paket/paket.bootstrapper.exe
+
+## Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## Local Environment Secrets (Prevent leaking API keys)
+usersecrets.json
+appsettings.Development.json
+*.secrets.json
+
